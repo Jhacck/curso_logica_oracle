@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de lógica</title>
+</head>
+<body>
+    <h1>Exemplo</h1>
+
+    <input/>
+    <button>Compare com o meu segredo</button>
+    <script>
+
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var segredo = Math.round(Math.random() * 10);
+        var input = document.querySelector("input");
+        function verifica() {
+            if(input.value == segredo) {
+                alert("Você ACERTOU!");
+            } else {
+                alert("Você ERROU!");
+            }
+
+            input.value = ""
+            input.focus();
+        }
+
+        var button = document.querySelector("button");
+        button.onclick = verifica;
+
+        
+
+
+        // var parcelas = [10.40, 40.00, 100.18, 200];
+        // for(var i = 0; i < parcelas.length; i = i + 1) {
+        //     document.write(parcelas[i]);
+        //     document.write("<br>");
+        // }
+
+        // document.write("FIM");
+    //     alert("Vamo testar um negocio");
+    //     document.write("Incluir texto através do js" +"<br>");
+
+    //     var media = ((24+22+23)/3)
+    //     document.write("A média das idades é: " + Math.round(media));
+    //     document.write("<br>");
+
+        
+    //     var tanque = 40;
+
+    //     var caminhoComGasolina = 480;
+    //     var consumoDeGasolina = caminhoComGasolina/tanque;
+
+    //     var caminhoComAlcool = 300;
+    //     var consumoDeAlcool = caminhoComAlcool/tanque;
+
+    //     document.write("O consumo de Gasolina é " + consumoDeGasolina + " km/L");
+
+    //     document.write("<br>");
+
+    //     document.write("O consumo de Álcool é " + consumoDeAlcool + " km/L");
+    //     document.write("<br>");
+
+    //     function pulaLinha() {
+    //         document.write("<br>");
+    //     }
+
+    //     function mostra(frase) {
+    //         document.write(frase);
+    //         pulaLinha();
+    //     }
+    //     var idadeMediaQuandoTemFilhos = 28;
+    //     var anoAtual = 2016;
+    //     var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+    //     mostra(quantidadeDeGeracoes);
+
+    //     function calculaImc(altura, peso) {
+    //         var imc = peso / (altura * altura);
+    //         mostra("O IMC calculado é: " + imc);
+    //     }
+
+    //     calculaImc(1.77,79);
+
+
+
+
+    //     function a(numero1, numero2) {
+    //     return numero1 + numero2;
+    // }
+
+    // function b(numero1, numero2) {
+    //     return numero1 / numero2;
+    // }
+
+    // var resultado = a(10,20) + b(30,2);
+
+    // mostra(resultado);
+
+        //     function pulaLinha() {
+        //     document.write("<br>");
+        // }
+
+        // function mostra(frase) {
+        //     document.write(frase);
+        //     pulaLinha();
+        // }
+
+        // function sorteia(n) {
+        //    return Math.round(Math.random() * n);
+        // }
+        // var numeroPensado = sorteia(10)
+
+        // var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+        // if(chute == numeroPensado) {
+        //     mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+        // } else {
+
+        //     if(chute > numeroPensado) {
+
+        //         mostra("Você errou! Seu chute é maior que o número pensado!");
+
+        //     } else {
+
+        //         mostra("Você errou! Seu chute é menor que o número pensado!");
+        //     }
+
+        // }
+        
+
+
+
+        // var numeroPensado = Math.round(Math.random() * 100);
+        
+        // var chute = parseInt(prompt("Digite seu chute!"));
+        // if (chute == numeroPensado) {
+        //     mostra("Você acertou uhul!");
+        // } else {
+        //     mostra("Você errou seu merdinhe, o número pensado foi: " + numeroPensado);
+        // }
+
+
+        // var senha = prompt();
+
+        // if(senha == "calopsitaazul") {
+
+        //     alert("Acesso liberado!");
+        // } else {
+
+        //     alert("Acesso negado!");
+        // }
+
+
+    </script>
+</body>
+</html>
